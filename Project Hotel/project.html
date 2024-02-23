@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KS Hotel</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    
+	
+	
+
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="hotel5.png" height="36px" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">Home</a> </li>
+          <li><a href="#about">About</a> </li>
+          <li><a href="#rooms">Rooms</a> </li>
+          <li><a href="#pages">Pages</a> </li>
+          <li><a href="#news">News</a> </li>
+          <li><a href="#contact">Contact</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li><a href="#book"> <button class="primary-btn">BOOK NOW</button></a> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="hotel2.jpg" alt="">
+          <div class="text">
+            <h1>Spend Your Holiday</h1>
+            <p><b> A perfect place Miami to spend holidays with your family and Your Friends.</b>
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+            <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="hotel1.jpg" alt="">
+          <div class="text">
+            <h1>Spend Your Holiday</h1>
+            <p><b> A perfect place Miami to spend holidays with your family and Your Friends.</b>
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="hotel3.jpg" alt="">
+          <div class="text">
+            <h1>Spend Your Holiday</h1>
+            <p><b> A perfect place Miami to spend holidays with your family and Your Friends.</b>
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+            <a href="#contact">  <button class="secondary-btn">CONTACT US</a> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="book" id="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Adults">
+          <input type="number" placeholder="Childern">
+          <input type="submit" value="CHECK AVAILABILITY">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>KS Hotel</h2>
+        </div>
+        <p> <b> KS Hotels is one of India's fastest-growing hospitality brands, managing a portfolio of over 90+ properties across the country. Founded in 2001 by industry veteran Krishnam Singh, KS Hotels is a renowned and trusted brand with a growth plan to reach 100 hotels by 2023. At KS Hotel Group we strive to be the first choice in the mind of guests, owners and talent. In our journey to achieve this, we practice strong beliefs and actions that respect the diversity of people, the community, ethics and the planet. and We are present in over 20 countries with ten distinctive brands. Together with our partners, we continue to develop new hotels and generate synergies to go much further. </b>
+
+   </p>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="hotel7.jpg" height="470px"  alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>300+</h1>
+        <hr>
+        <span>Hotels</span>
+      </div>
+      <div class="box">
+        <h1>5000</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>1200</h1>
+        <hr>
+        <span>Resturent</span>
+      </div>
+      <div class="box">
+        <h1>1500</h1>
+        <hr>
+        <span>Locations</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms" id="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPOLRE</h1>
+        <h2>Our Rooms</h2>
+        <p><b>Room With Free Cancellation | Breakfast + Lunch/Dinner and Best Luxury Rooms.</b>
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="ks1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Suporior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>A superior room is a room in a hotel that is more comfortable or has better amenities than other rooms.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>5699 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Deluxe Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Deluxe rooms are usually larger than their standard counterparts, may include a bathtub and a shower.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>7999 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Luxury Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Luxury rooms are more spacious and with additional furniture, good for long stay.
+			  Sophisticated decor in luxury rooms.
+
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>12599 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks4.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Single Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Single rooms are assigned to one person.It may have one or more beds, but the size of the bed depends on the hotel.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>2699 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks5.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Family Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>A family room is an informal, all-purpose room in a house. The family room is designed to be a place.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>13000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks6.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Double Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Double room is a room intended for two people,  One person occupying a double room has to pay a supplement.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>$250 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks7.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>Premium Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Premium rooms are more better and has more amenities than the deluxe rooms, though will the same services from the hotel.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>22990 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Twins Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>A twin bed means that you will have two separate beds in your hotel room. Twin beds could mean two 2 Person.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>8999 <span> <br> Per Night </span> </h3>
+              </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>PHOTOS</h1>
+        <h2>Our Gallery</h2>
+        <p><B>View photo gallery of KS Hotels, restaurants and rooms and suites. Take a glimpse of amenities offered at KS Hotels.</B>
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="p1.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Exterior View</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="p2.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3> Lobby</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="ks1.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Deluxe Garden</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="ks2.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Deluxe Pool</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="ks4.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>The Restaurant</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="ks5.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Swimming Pool</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="ks6.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>The Bar</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="ks7.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Fitness Centre</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="ks8.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Conference Room</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="p3.jpg" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Kids Club</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services top">
+    <div class="container">
+      <div class="heading">
+        <h1>SERVICES</h1>
+        <h2>Our Services</h2>
+        <p><b> Our KS Hotels has lots of Facilities like Gym,Conference Room,Kids Cub,Breakfast etc.</b>
+      </div>
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Delious Food</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Fintness</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>South Indian Restaurant</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Beauty Spa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="hotel14.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Customer top" id="pages">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p> KS Hotel & Resturent is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at Goa an unforgettable holiday.</p>
+          <h3>Founder</h3>
+          <label>KRISHNAM SINGH</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Our KS Hotel is in a superb location with friendly and helpful staff. The hostel offers comfortable, clean rooms and fantastic access to London most famous sights and attractions.</p>
+          <h3>Founder</h3>
+          <label>KRISHNAM SINGH</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p> Esteemed guests are welcome to relax and unwind in a quiet and elegant setting in the popular resort of New York and enjoy a genuine experience of leisure, pleasure, gastronomy and wellness within the premises of the resort</p>
+          <h3>Founder</h3>
+          <label>KRISHNAM SINGH</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="news top rooms" id="news">
+    <div class="container">
+      <div class="heading">
+        <h1>NEWS</h1>
+        <h2>Our News</h2>
+        <p><B>Driven by a strong recovery in demand, KS hotel companies accelerated their growth plans in the current year, resulting in an over 33 percent increase in brand signings by keys over the previous year. 166 new hotels with 14,885 rooms were signed during the year, while 90 hotels with 5,702 rooms were rebranded.</B>
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="P1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>KS Hotels </h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>500</label>
+                <i class="fa fa-comments"></i>
+				 <label>248</label>
+              </div>
+              <p> The KS Hotel industry can look forward to robust demand for the next eight to twelve months. </p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="ks3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h2>KS Hotel</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>1200</label>
+                <i class="fa fa-comments"></i>
+				 <label>675</label>
+              </div>
+              <p>NOI is calculated by subtracting all operating expenses, insurance and maintenance. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="himanshu.jpg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Himanshu Kashyap</h2>
+              <p>Founder Digicoders: This Hotel Website is Very Good. All Types of Rooms Availabe in it.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="gopal.jpg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Gopal Singh</h2>
+              <p> Head Digicoders: The KS Hotel is Progressing Every Year and many people are getting help from this Hotel.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="krishnam.jpg" alt="">
+            </div>
+            <div class="stext">
+              <h2>VARSHA RANI</h2>
+              <p>Founder KS Hotel: Beacause of Your Love,KS Hotels has become sixth in the world</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter mtop">
+    <div class="container flex_space">
+      <h1>Subscribe to Our Newsletter</h1>
+      <input type="text" placeholder="Your Email">
+      <input type="button" value="Subscribe">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box" id="contact">
+        <img src="hotel1.jpg" alt="">
+        <p> KS hotels welcomes you in a real cosmopolitan, pulsing milieu, at the same time offering peace and intimate retirement, just in the heart of the city centre. Timeless elegance tailored for the demands of our time; exceptional combination of magnificent architecture and divine cuisine, in perfect harmony. A Michelin-starred restaurant and a beautifully restored town palace joined forces for you!  Our KS is in a superb location with friendly and helpful staff. The hostel offers comfortable, clean rooms and fantastic access to New York most famous sights and attractions. </p><br>
+
+        
+      </div>
+
+      <div class="box">
+        <h2>Links</h2> 
+        <ul>
+          <div class="icon">
+         <a href="https://www.facebook.com/gopalsingh.rajawatii.1" class="fa fa-facebook-f"> Facebook </a><br><br> 
+		
+ 
+          <a href="https://instagram.com/krishnam_thakur_1" class="fa fa-instagram">Instagram</a><br><br>
+
+         <a href="https://twitter.com/Krishna17545965" class="fa fa-twitter">Twitter</a><br><br>
+       
+		<a href="https://www.youtube.com/@krishnamthakur191" class="fa fa-youtube">Youtube</a><br><br>
+         
+		<a href="https://www.linkedin.com/in/krishnam-singh-297436286"><i class="fa-brands fa-linkedin">Linkedin</i></a><br><br>
+		<a href="https://wa.me/qr/NMU4MDFV5XJJI1"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+		  
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p> ANY QUERY AND COMPLANE FOR CONTACT ME.       </p>
+        <i class="fa fa-location-dot"></i>
+		<br>
+        <label> 101 IT CHAURAHA Behind State Bank Of Babuganj  Branch . </label> <br>
+		
+       <i class="fa fa-phone"></i><br>
+	  <a href="tel:+919919269438">Call me</a>
+	   <br>
+	   
+	   
+		<br>
+        <i class="fa fa-envelope"></i>
+		<a href="mailto: gopalsinghrajawat230@gmail.com?"></a>
+        <label>Kshotels6605@gmail.com</label> 
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
